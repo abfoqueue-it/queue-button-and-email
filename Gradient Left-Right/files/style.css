@@ -286,15 +286,19 @@ a {
 }
 /* email input iii*/
 .reminder-form .item-input {
-  padding: 3px 15px 0px;
+  padding: 3px 15px 3px;
   font-size: 15px;
   background: #fff;
-  border: 1px solid #adaeb0;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to right, red , black);
   color: #4d4d4d;
   font-family: inherit;
   font-weight: 400;
   box-sizing: border-box;
   line-height: normal;
+  /* size of input container, what is added or subtracted should equally be subtracted or added to button */
   width: 294px;
   min-width: 250px;
   vertical-align: top;
@@ -311,7 +315,8 @@ a {
 
 /*button bbb*/
 .btn {
-  background-color: red;
+  background-image: linear-gradient(to right, red , black);
+  border: 2px solid #4d4d4d;
   color: #fff;
   width: 184px;
   text-align: center;
@@ -342,7 +347,13 @@ body.exit .btn {
 }
 .btn:hover {
   background: none;
-  background-color: red;
+  background-color: white;
+  color: #757575;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to right, black , red);
+  font-weight: 400;
   box-shadow: none;
 }
 
