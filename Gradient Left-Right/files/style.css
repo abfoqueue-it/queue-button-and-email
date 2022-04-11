@@ -347,13 +347,13 @@ body.exit .btn {
 }
 .btn:hover {
   background: none;
-  background-color: white;
-  color: #757575;
+  background-color: #4d4d4d;
+  color: white;
   border: 3px solid;
   border-image-slice: 1;
   border-width: 3px;
   border-image-source: linear-gradient(to right, black , red);
-  font-weight: 400;
+  font-weight: 600;
   box-shadow: none;
 }
 
