@@ -286,19 +286,21 @@ a {
 }
 /* email input iii*/
 .reminder-form .item-input {
-  padding: 3px 15px 0px;
+  padding: 3px 15px 3px;
   font-size: 15px;
   background: #fff;
   border: 1px solid #adaeb0;
+  border-radius: 24px;
   color: #4d4d4d;
   font-family: inherit;
   font-weight: 400;
   box-sizing: border-box;
   line-height: normal;
-  width: 294px;
+  width: 478px;
   min-width: 250px;
   vertical-align: top;
   margin: 0 5px 5px 0;
+  position: relative;
 }
 
 .reminder-form .item-input:focus {
@@ -322,9 +324,11 @@ a {
   font-size: 15px;
   font-family: inherit;
   line-height: normal;
-  border-radius: 0;
+  border-radius: 24px;
   box-sizing: border-box;
   /*font-weight: 700;*/
+  position: absolute;
+  right: 0;
 }
 .reminder-form .item-input,
 .btn {
@@ -422,11 +426,19 @@ body.exit .btn {
   display: none;
 }
 @media screen and (max-width: 540px) {
-  .reminder-form .item-input,
+  /* .reminder-form .item-input,
   .btn {
     width: 100%;
     text-align: center;
     max-width: none;
+  } */
+  .reminder-form .item-input {
+    position: relative;
+    width: 100%;
+  }
+  .btn {
+    position: absolute;
+    top: 0;
   }
   #main-top-message {
     display: none;
